@@ -47,7 +47,6 @@ if __name__ == "__main__":
         print("It seems that current context is not set, please check your settings")
         sys.exit(1)
 
-
     config.load_kube_config()
     v1 = client.CoreV1Api()
 
@@ -57,4 +56,3 @@ if __name__ == "__main__":
         check_namespace_exists(args.namespace)
 
     list_all_namespaces_pods(node_name=args.node,namespace=args.namespace)
-
