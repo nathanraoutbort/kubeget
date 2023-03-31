@@ -1,0 +1,2 @@
+tabulate==0.9
+kubernetes==26.1.0
